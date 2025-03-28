@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+/* Fondo imagen Marvel */
+.app-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(55, 3, 3, 0.8)), url('../assets/marvel.jpg');
+    background-size: cover;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor efecto Spider-man */
+.todo-container {
+    padding: 24px;
+    max-width: 800px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.5);
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Mis películas de marvel */
+.todo-title {
+    font-family: 'Bangers', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #ffffff;
+}
+
+/* Lista de películas */
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 1px solid #444;
+    margin: 5px;
+}
+
+/* Botones de orden */
+.sort-options {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.sort-options button {
+    background-color: #eebf12;
+    border: 3px solid #ccc;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.sort-options button:hover {
+    background-color: #bc7373;
+}
+
+/* Película vista (tachado) */
+.seen {
+    text-decoration: line-through;
+    color: #999;
+}
+
+/* Botón de visto */
+.todo-button {
+    font-size: 14px;
+    background-color: #ca79f9;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.todo-button:hover {
+    background-color: #00d6d6;
+}
+
+/* Agregar película */
+.todo-input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #222;
+    color: white;
+}
+
+/* Botón de agregar */
+.add-button {
+    background-color: #32c153;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    background-color: #eaec69;
+}
+
+/* Botón editar película */
+.edit-button {
+    background-color: #2f0b9a;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #525c2d;
+}
+
+/* Botón eliminar película */
+.delete-button {
+    background-color: #9a140b;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #e1abab;
+}
+
+/* Modal para editar */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    border-radius: 12px;
+}
+
+.modal-content {
+    background: linear-gradient(135deg, #302f2f, #434242);
+    color: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.modal-content input {
+    width: 80%;
+    padding: 10px;
+    margin: 25px 0;
+    border-radius: 4px;
+    border: none;
+    background-color: #222;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.modal h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.modal-buttons button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.modal-buttons button:hover {
+    background-color: #edd489;
+}
+
+.modal-buttons .cancel-btn {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+.modal-buttons .save-btn {
+    background-color: #28a745;
+    color: white;
+}
